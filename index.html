@@ -11,7 +11,10 @@
       <link rel="stylesheet"  href="css/style.css">
 
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- For Email Formspree -->
+      <meta name="referrer" content="origin" />
       <title>Saix's Company Profile</title>
     </head>
 
@@ -39,11 +42,11 @@
 
       <!-- Sidenav -->
       <ul class="sidenav" id="mobile-nav">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Clients</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
 
 
@@ -213,7 +216,7 @@
               </ul>
             </div>
             <div class="col m7 s12">
-              <form>
+              <form action="https://formspree.io/saixophone@gmail.com" method="POST" id="contact">
                 <div class="card-panel">
                   <h5>Please fill out this form</h5>
                   <div class="input-field">
@@ -221,7 +224,7 @@
                     <label for="name">Name</label>
                   </div>
                   <div class="input-field">
-                    <input type="email" name="email" id="email" class="validate">
+                    <input type="email" name="_replyto" id="email" class="validate">
                     <label for="email">Email</label>
                   </div>
                   <div class="input-field">
@@ -232,7 +235,7 @@
                     <textarea name="message" id="message" class="materialize-textarea validate"></textarea>
                     <label for="message">Message</label>
                   </div>
-                  <button type="submit" class="btn blue darken-2">Send</button>
+                  <button type="submit" class="btn blue darken-2" value="send">Send</button>
                 </div>
               </form>
             </div>
