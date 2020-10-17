@@ -1,36 +1,178 @@
-.slider h3,
-.slider h5,
-.clients h3{
-	text-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* Navbar */
+.navbar-brand {
+    filter: grayscale(100%) ;
+    -webkit-filter: grayscale(100%);
 }
 
-.parallax-container {
-	height: 20%;
+/* Header */
+.container-fluid {
+    background-color: #3E3E3F;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-emphasis: center;
+}
+.text-center{
+    margin: auto;
+}
+.head-article{
+    width: 85%;
+    margin: 0 auto;
 }
 
-.parallax img {
-	filter: grayscale(1);
-	opacity: 0.5 !important;
+/* Woman */
+.campaign {
+    position: relative;
+    text-align: center;
+    color: #F16692;
+  }
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.bold {
+    font-size: 10vw;
+    font-weight: bolder;
+}
+.hashtagMovement{
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    font-size: 2.92vw;
+    color: #e6e7e9;
+    background-color: #F16692;
 }
 
-.clients img {
-	max-width: 150px;
-	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+.FaceAppDesc {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    font-size: 2.92vw;
 }
 
-section,
-footer {
-	padding:20px 0px;
+/* Carousel */
+.slider {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.carousel-caption{
+    color: black;
+}
+.caption {
+    text-decoration: none !important;
 }
 
-.flex{
-	display: flex;
-	flex-wrap: wrap;
+
+/* Article Content */
+.article{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.article-content{
+    padding-top: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 0px;
+    font-size: 75%;
+    margin-bottom: 0%;
+}
+.article-source {
+    padding-top: 0px;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 70%;
+}
+.footer-article {
+    border: 1px dashed #696767; 
+    width: 50%; 
+    margin: 25px; 
+    margin-top: 5%; 
+    margin-bottom: 5%;
+}
+.article-content-2{
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.img-caption{
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 0px;
+    font-size: 50%;
+    margin-bottom: 0%;
 }
 
-.brand-logo img {
-	display: flex;
-	height: 58px;
-	padding-left: 30px;
-	padding-top: 5px;
-}
+/* Reponsive Typography */
+  /* Below */
+  @media (max-width: 543px) {  
+    .text-center {font-size: 3.5vw;}
+  }
+  /* Small devices (landscape phones, 544px and up) */
+  @media (min-width: 544px) {  
+    .text-center {font-size: 2.5vw;}
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  
+    .text-center {font-size: 2.5vw;}
+    .footer-article {
+        border: 1px dashed #000; 
+        width: 50%; 
+        margin: 25px; 
+        margin-top: 1%; 
+        margin-bottom: 1%;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .text-center {font-size: 2.5vw;}
+    .centered{
+        font-size: 3em;
+    }
+    .hashtagMovement{
+        font-size: 2em;
+    }
+    .FaceAppDesc{
+        font-size: 2em;
+    }
+    .footer-article {
+        border: 1px dashed #000; 
+        width: 50%; 
+        margin: 25px; 
+        margin-top: 1%; 
+        margin-bottom: 1%;
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .text-center {font-size: 2vw;}
+    .centered{
+        font-size: 3em;
+    }
+    .bold{
+        font-size: 7.5vw;
+    }
+    .footer-article {
+        border: 1px dashed #000; 
+        width: 50%; 
+        margin: 25px; 
+        margin-top: 1%; 
+        margin-bottom: 1%;
+    }
+    .img-caption{
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 0px;
+        font-size: 60%;
+        margin-bottom: 0%;
+    }
+  }
